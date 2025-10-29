@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <h1>Variables are of three type <br>
+    </h1>
+    <ol >
+        <li>var</li>
+        <p>
+            its a universal scope and allow redeclare and reassign 
+        </p>
+        <li>let</li>
+        <p>
+            its a block scope use only when we have to declare Variables in {} 
+        </p>
+        <p>it allow us to reassign but dont allow us to redeclare</p>
+
+        <li>const</li>
+        <p>const is also ablockscope </p>
+        <p>const can't allow to redeclare or reassign</p>
+
+        <p> (var a) it is called declaration</p>
+        <p> (a = 10) is called assignment </p>
+        <p>(let a = 20;) this is known as initialization</p>
+    </ol>
+    <script>
+        // 1.var
+            // var a = 10; 
+            // var b  declaration 
+            // b=100;  assignment
+            // var a = 20; redeclaring 
+            // b= 300;   reassign 
+            // console.log("b =>",b , " a=> " , a);
+            
+        // 2.let
+            // let c = 100;
+            // let d 
+            // d = 200;
+            // d= 500; //but it allow assignment 
+            // // let c = 200;  // redeclaration is not allowed shows error 
+            // console.log(d);
+            // console.log(c);
+            
+        // 3 const
+            // const a = 10;
+            // const b;
+            // b = 200; shows error is not allow  assignment posibal
+            // const a = 40; shows error it not allow  to reassigne
+    </script>
+</body>
+</html>

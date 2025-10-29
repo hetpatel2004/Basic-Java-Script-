@@ -1,0 +1,71 @@
+1. What are the different data types in JavaScript?
+
+JavaScript has 8 data-type:
+Primitive types:
+
+String - e.g., "Hello"
+
+Number - e.g., 42, 3.14
+
+BigInt - for large integers, e.g., 123n
+
+Boolean - true or false
+
+Undefined - variable declared but not assigned
+
+Null - represents “no value”
+
+Symbol - unique identifiers
+Non-primitive:
+Object - collection of key-value pairs (includes arrays, functions, etc.)
+
+
+2. What is the difference between var, let, and const?
+
+| Feature        | var                              | let                   | const                 |
+| -------------- | -------------------------------- | --------------------- | --------------------- |
+| Scope          | Function-scoped                  | Block-scoped          | Block-scoped          |
+| Re-declaration | Allowed                          | Not allowed           | Not allowed           |
+| Re-assignment  | Allowed                          | Allowed               | Not allowed           |
+| Hoisted        | Yes (initialized as undefined) | Yes (not initialized) | Yes (not initialized) |
+
+
+3. What is hoisting in JavaScript?
+
+Hoisting means moving declarations to the top of their scope during compilation.
+However, only the declaration is hoisted — not the initialization.
+
+4. Explain the concept of closures.
+
+A closure is created when a function “remembers” the variables from its outer scope even after that scope has finished executing.
+
+5. What is the difference between == and ===?
+
+| Operator | Description                                         | Example             |
+| -------- | --------------------------------------------------- | ------------------- |
+| ==     | Compares *values only* (performs type conversion) | '5' == 5 → true   |
+| ===    | Compares *values and types* (strict equality)     | '5' === 5 → false |
+
+
+6. What is a callback function?
+A callback function is a function passed as an argument to another function and executed later.\
+
+7. What are arrow functions?
+Arrow functions are a shorter syntax for writing functions introduced in ES6.
+They also don`t have their own this.
+
+8. What is the difference between function declaration and function expression?
+
+| Type                     | Example                                        | Hoisted? |
+| ------------------------ | ---------------------------------------------- | -------- |
+| *Function Declaration* | function add(a, b) { return a + b; }         |
+| *Function Expression*  | const add = function(a, b) { return a + b; } |
+
+9. What are template literals?
+
+Template literals (using backticks `) allow embedding variables and expressions easily using ${}.
+
+10. What are default parameters in functions?
+
+Default parameters let you assign a default value to a function parameter if no value is provided.
+
