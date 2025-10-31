@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ol>
+        <li>Find the length of a given string</li>
+        <li>Convert a string to uppercase and lowercase</li>
+        <li>Extract a part of a string using slice()</li>
+        <li>Replace a specific word in a string using replace()</li>
+        <li>Check whether a substring exists in a string using includes()</li>
+        <li>Find the position of a substring using indexOf() and lastIndexOf()</li>
+        <li>Remove extra spaces from both ends of a string using trim()</li>
+        <li>Split a sentence into words using split()</li>
+        <li>Concatenate two strings using concat()</li>
+        <li>Retrieve a specific character from a string using charAt() and its Unicode using charCodeAt()</li>
+
+        <li>Create an array and find its length</li>
+        <li>Add elements to the end and beginning of an array using push() and unshift()</li>
+        <li>Remove elements from the end and beginning of an array using pop() and shift()</li>
+        <li>Sort an array of strings alphabetically using sort()</li>
+        <li>Reverse the order of elements in an array using reverse()</li>
+        <li>Join all array elements into a single string using join()</li>
+        <li>Find the index of a specific element in an array using indexOf()</li>
+        <li>Check if an element exists in an array using includes()</li>
+        <li>Extract a portion of an array using slice()</li>
+        <li>Replace or remove elements in an array using splice()</li>
+    </ol>
+
+    <script>
+        // 1. Find the length of a given string.
+        let a = "het patel";
+        console.log(a.length);
+        // --------------------------------------------------------------
+        // 2. Convert a string to uppercase and lowercase — <code>str.toUpperCase()</code>, <code>str.toLowerCase()</code></li>
+        console.log(a.toLowerCase());
+        console.log(a.toLocaleUpperCase());
+        // --------------------------------------------------------------
+        //3.Extract a part of a string using slice()
+            console.log(a.slice(0,2));//will print all the number between given numbers 
+            console.log(a.slice(2)); //will print all other remaning numbers for the string
+        // --------------------------------------------------------------
+        //4.Replace a specific word in a string using replace()
+        console.log(a.replace("e","$")); // will only one word 
+        console.log(a.replaceAll("e","$")); //will replace all the semilar word in the string 
+        // --------------------------------------------------------------
+        //5.Check whether a substring exists in a string using includes()
+        console.log(a.includes("pate")); //will check the given word is avalibal or not in string 
+        
+        // --------------------------------------------------------------
+        //6.Find the position of a substring using indexOf() and lastIndexOf()
+            console.log(a.indexOf("t")); // will find the position or locktion on which the given number is 
+            console.log(a.lastIndexOf("e")); //will print the place were the word at last place
+            
+        // --------------------------------------------------------------
+        // 7.Remove extra spaces from both ends of a string using trim()
+            let b = "    het  ";
+            console.log(a.length);
+            console.log(b.trim());
+            
+        // --------------------------------------------------------------
+        // 8.Split a sentence into words using split()
+            console.log(a.split(" ")); //will work as like its name will convert all the parts the words in parts 
+            
+        // --------------------------------------------------------------
+        // 9.Concatenate two strings using concat()
+        console.log(a.concat(b)); // we can do it using operator but here we used methord 
+        // --------------------------------------------------------------
+        // 10.Retrieve a specific character from a string using charAt() and its Unicode using charCodeAt()
+        console.log(a.charAt(4)); // by index number will print the value on it 
+        // --------------------------------------------------------------
+        // 11.Create an array and find its length
+            let arr = [1,2,3,4,5,6,7,8];
+            console.log(arr);
+            console.log(arr.length);
+            
+        // --------------------------------------------------------------
+        // 12.Add elements to the end and beginning of an array using push() and unshift()
+         console.log(arr.push(77)); //push will add the date or the given value at the end  
+         console.log(arr);
+         console.log(arr.pop());     // remove from last
+         console.log(arr);
+
+         console.log(arr.shift()); //push will add the date or the given value at the end  
+         console.log(arr);
+         console.log(arr.unshift(1));     // remove from last
+         console.log(arr);
+        // --------------------------------------------------------------
+        // 13.Remove elements from the end and beginning of an array using pop() and shift()
+        console.log(arr.push(77)); //push will add the date or the given value at the end  
+         console.log(arr);
+         console.log(arr.pop());     // remove from last
+         console.log(arr);
+
+
+         console.log(arr.shift()); //push will add the date or the given value at the end  
+         console.log(arr);
+         console.log(arr.unshift(1));     // remove from last
+         console.log(arr);
+        
+        // --------------------------------------------------------------
+        // 14.Sort an array of strings alphabetically using sort()
+         let arr2 = ["het","patel","aastha","radha"]
+        console.log(arr2.sort()); // will set name acordint to a to z
+        
+        // --------------------------------------------------------------
+        // 15.Reverse the order of elements in an array using reverse()
+            console.log(arr.reverse()); // will reverse arre
+            
+        // --------------------------------------------------------------
+        // 16.Join all array elements into a single string using join()
+        console.log(arr.join());// will convert all whole array into string
+        console.log(arr2.join());
+        
+        // --------------------------------------------------------------
+        // 17.Find the index of a specific element in an array using indexOf()
+        console.log(arr2.indexOf("het"));
+        console.log(arr2);
+        
+        // --------------------------------------------------------------
+        // 18.Check if an element exists in an array using includes()
+        console.log(arr.includes(7)); // will check the numbetr is in the string or not 
+        
+        // --------------------------------------------------------------
+        // 19.Extract a portion of an array using slice()
+            console.log(arr2.slice(2));//will show all the elements after 2
+            console.log(arr2);
+            
+        // --------------------------------------------------------------
+        // 20.Replace or remove elements in an array using splice()
+        console.log(arr);
+        console.log(arr.splice(3));
+        console.log(arr);
+        
+    </script>
+</body>
+
+</html>
