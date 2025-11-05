@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statement</title>
+</head>
+
+<body>
+    <ol>
+        <li>Check whether a number entered by the user is even or odd.</li>
+    </ol>
+    <script>
+        // 1.Check whether a number entered by the user is even or odd.
+        // let a = 10;
+        // if (a % 2 == 0) {
+        //     console.log("evan numbers");
+        // }
+        // else{
+        //     console.log(" not aevan numbers");
+
+        // }
+
+        // 2.Ask the user to enter a month number (1–12) and display the number of days in that month.
+        // let b = 7;
+
+        // switch (b) {
+        //     case 1:
+        //         console.log("january");
+
+        //         break;
+        //     case 2:
+        //         console.log("fabuary");
+
+        //         break;
+        //     case 3:
+        //         console.log("march");
+
+        //         break;
+        //     case 4:
+        //         console.log("April");
+
+        //         break;
+        //     case 5:
+        //         console.log("may");
+
+        //         break;
+        //     case 6:
+        //         console.log("june");
+
+        //         break;
+        //     case 7:
+        //         console.log("july");
+
+        //         break;
+        //     case 8:
+        //         console.log("ougust");
+
+        //         break;
+        //     case 9:
+        //         console.log("suptember");
+
+        //         break;
+        //     case 10:
+        //         console.log("octomber");
+
+        //         break;
+        //     case 11:
+        //         console.log("november");
+
+        //         break;
+        //     case 12:
+        //         console.log("decembre");
+
+        //         break;
+        //     default:
+        //         console.log("enter velid number in (1-12)");
+                
+        //         break;
+        // }
+        
+
+
+
+
+//         3.Ask the user for marks and display the grade:
+// 90–100 → A
+// 75–89 → B
+// 50–74 → C
+// Below 50 → Fail
+        // let marks = 70;
+
+        // if (marks>=90 && marks<=100) {
+        //     console.log("A-grade");
+        // }
+        // else if(marks>=89 && marks<=75){
+        //     console.log("b-grade");
+            
+        // } 
+        // else if(marks>=50 && marks<=74){
+        //     console.log("b-grade");
+            
+        // } 
+        // else {
+        //     console.log("fail");
+            
+        // }
+
+        // 4.Check whether a given number is positive, negative, or zero.
+
+        // let num = 10;
+        // let num2 = -10;
+        
+        // if (num2 >= 0) {
+        //     console.log("posative");
+            
+        // }
+        // else if(num == 0 ){
+        //     console.log("zero");
+
+        // } 
+        // else {
+        //     console.log("nagetive");
+
+        // }
+
+        //5.Ask the user to enter a time (in 24-hour format) and display:0–11 → “Good Morning”12–17 → “Good Afternoon”18–23 → “Good Evening”
+        //     let time = 10;
+        //     // let time2 = 10;
+
+        // if (time<=11&& time>0) {
+        //     console.log("good morning");
+            
+        // } 
+        // else if (time<=17&& time>12){
+        //     console.log("Good after noon");
+            
+        // }
+        // else if (time<=23&& time>18){
+        //     console.log("Good evening");
+            
+        // }
+        // else {
+        //     console.log("good nignt");
+            
+        // }
+
+        // 6.Ask the user to enter a month name and display its season:March–May → “Spring”June–August → “Summer”September–November → “Autumn”December–February → “Winter”
+
+        // let month = "April"
+
+        // if (month == "June"||"July"||"Augest" ) {
+        //     console.log("Summar");
+            
+        // }
+        // else if (month == "Suptember"||"Octomber"||"November"){
+        //     console.log("Autumn");
+            
+        // }
+        // else if (month == "March"||"April"||"May"){
+        //     console.log("Spring");
+            
+        // }
+        // else if (month == "December"||"January"||"Fabuary"){
+        //     console.log("Winter");
+            
+        // }
+        //  else {
+        //     console.log("Not a valid month");
+        // }
+
+        // 7.Check whether a given year is a Leap Year or not.
+
+        // let year = 2020;
+        // if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        //     console.log("it a leap year");
+            
+        // } else {
+        //     console.log("Its not a leap year");
+            
+        // }
+
+        // 8.Take three numbers and find the largest using if...else if...else.
+
+        // let num1 = 7;
+        // let num2 = 70;
+        // let num3 = 5;
+        // if (num1>num2&&num1>num3) {
+        //     console.log("largest",num1);
+            
+        // } 
+        // else if(num2>num1&&num2>num3){
+        //     console.log("largest:-",num2);
+            
+        // }
+        // else {
+        //     console.log("largest:-",num3);
+            
+        // }
+
+        // 9.Ask the user to enter a product price and membership status. If the user is a member, give 10% discount. If not, show the full price.
+            // let membership = "yes"; //yes or no
+            // let price = 1000;
+            // if (membership == "yes") {
+            //   let discount = price-(price*10/100)  
+            //     console.log("you get 10% off on price",discount);
+                
+            // } else {
+            //     console.log("you have to pay full amount",price);
+                
+            // }
+
+        // 10.Take a shopping amount and apply discount using conditions: Amount ≥ 5000 → 20% discount Amount ≥ 2000 → 10% discount Else → No discount
+
+        let amount = 3000;
+
+        if (amount>=5000) {
+            let discount = amount-(amount*20/100)
+            console.log(discount);
+            
+        } else if(amount>=2000){
+            let discount = amount-(amount*10/100)
+            console.log(discount);
+            
+        }else{
+            console.log("No discount");
+            
+        }
+    </script>
+</body>
+
+</html>
