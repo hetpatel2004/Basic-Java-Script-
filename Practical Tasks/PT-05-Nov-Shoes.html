@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        (alert("Please Enter correct spealing as it givens at the title all must be in small case"));
+
+        let Brand = prompt("Available brands Are 'nike:-has 10% off on 2800' 'puma:-has 15% off on 2900' 'adidas:-has 5% off on 1800' 'ret_trap:- has 21% off on 6500' Enater name of Shoes brand in small case (a-z)");
+        if (Brand == "nike") {
+            let colour = prompt("Available Colours 'black' 'white' ");
+            if (colour == "black" || "white") {
+
+                let original_price = 2800;
+                let discount = 10;
+                let final = (original_price * (10 / 100));
+                let discounted_price = (original_price - final);
+
+                console.log("Brand name:-",Brand);
+                console.log("Original_price:-",original_price);
+                console.log("Discounted_price:-",discounted_price);
+
+
+
+                if (final > 5000) {
+                    console.log("Luxury Category");
+                }
+                else if (final >= 2500 || final <= 5000) {
+                    console.log("Mid Range Category");
+                }
+                else {
+                    console.log("Budget Category");
+                }
+
+
+                if (discount < 10) {
+                    console.log("Low Offer");
+                }
+                else if (discount >= 10 || discount <= 19) {
+                    console.log("Standard Offer");
+                }
+                else {
+                    console.log("Hot Deal");
+                }
+
+            }
+            else {
+                console.log("Selected color not available for this brand.");
+            }
+        }
+
+        // ------------------------------------one---------------------
+        else if (Brand == "puma") {
+            let colour = prompt("Available Colours 'green' 'red' ");
+            if (colour == "green" || "red") {
+
+                let original_price2 = 2900;
+                let discount2 = 15;
+                let final2 = (original_price2 * (discount2 / 100));
+                let discounted_price2 = original_price2 - final2;
+
+                console.log("Brand name:-",Brand);
+                console.log("Original price:-",original_price2);
+                console.log("Discounted price:-",discounted_price2);
+
+
+
+                if (final2 > 5000) {
+                    console.log("Luxury Category");
+                }
+                else if (final2 >= 2500 || final2 <= 5000) {
+                    console.log("Mid Range Category");
+                }
+                else {
+                    console.log("Budget Category");
+                }
+
+
+                if (discount2 < 10) {
+                    console.log("Low Offer");
+                }
+                else if (discount2 >= 10 || discount2 <= 19) {
+                    console.log("Standard Offer");
+                }
+                else {
+                    console.log("Hot Deal");
+                }
+
+            }
+            else {
+                console.log("Selected color not available for this brand.");
+            }
+        }
+
+        // ------------------------------------2end---------------------
+        else if (Brand == "red_Tape") {
+            let colour = prompt("Available Colours 'brown'");
+            if (colour == "brown") {
+
+                let original_price3 = 1800;
+                let discount3 = 21;
+                let final3 = (original_price3 * (discount3 / 100));
+                let discounted_price3 = (original_price3 - final3);
+
+                console.log("Brand name:-",Brand);
+                console.log("Originl price:-",original_price3);
+                console.log("Discounted price",discounted_price3);
+
+
+
+                if (final3 > 5000) {
+                    console.log("Luxury Category");
+                }
+                else if (final3 >= 3500 || final3 <= 5000) {
+                    console.log("Mid Range Category");
+                }
+                else {
+                    console.log("Budget Category");
+                }
+
+
+                if (discount3 < 10) {
+                    console.log("Low Offer");
+                }
+                else if (discount3 >= 10 || discount3 <= 19) {
+                    console.log("Standard Offer");
+                }
+                else {
+                    console.log("Hot Deal");
+                }
+
+            }
+            else {
+                console.log("Selected color not available for this brand.");
+            }
+        }
+
+        // ------------------------------------3end---------------------
+        else if (Brand == "adidas") {
+            let colour = prompt("Available Colours 'blue' 'white' ")
+            if (colour == "white" || "blue") {
+
+                let original_price4 = 4900;
+                let discount4 = 15;
+                let final4 = (original_price4 * (discount4 / 100));
+                let discounted_price4 = (original_price4 - final4);
+
+                console.log(Brand);
+                console.log(original_price4);
+                console.log(discounted_price4);
+
+
+
+                if (final4 > 5000) {
+                    console.log("Luxury Category");
+                }
+                else if (final4 >= 4500 || final4 <= 5000) {
+                    console.log("Mid Range Category");
+                }
+                else {
+                    console.log("Budget Category");
+                }
+
+
+                if (discount4 < 10) {
+                    console.log("Low Offer");
+                }
+                else if (discount4 >= 10 || discount4 <= 19) {
+                    console.log("Standard Offer");
+                }
+                else {
+                    console.log("Hot Deal");
+                }
+
+            }
+            else {
+                console.log("Selected color not available for this brand.");
+            }
+        }
+        else {
+            console.log("sorry  not avalibal");
+            // console.log("OR check the spealing again of shoes brand are from this :-'nike','puma','adidas' write it in small case");
+
+        }
+        // ------------------------------------4end---------------------
+    </script>
+</body>
+
+</html>
